@@ -8,7 +8,16 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  
   <body>
+    <%= render :partial => "partials/nav" %>
     <%= yield %>
+
+    <footer>
+      <div class="small-12 columns" id="footer">
+        <%= render partial: 'partials/footer' %>
+      </div>
+    </footer> 
+    
   </body>
 </html>
