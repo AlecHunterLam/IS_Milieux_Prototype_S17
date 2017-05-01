@@ -15,6 +15,14 @@
  *= require_self
  */
 
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans', serif;
+}
+
 nav {
   padding-bottom: 0px;
 }
@@ -51,4 +59,23 @@ nav ul {
 
 #desc {
   padding: 10px;
+}
+
+section#contact {
+    background-color: #222222;
+    background-image: url('contact.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+}
+
+footer {
+  margin-bottom: 0px !important;
+}
+
+#contact-person {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: auto;
+  margin-right: auto;
 }

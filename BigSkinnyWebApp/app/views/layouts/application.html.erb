@@ -6,9 +6,10 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   </head>
 
-  
+
   <body>
     <%= render :partial => "partials/nav" %>
     <%= yield %>
@@ -17,7 +18,7 @@
       <div class="small-12 columns" id="footer">
         <%= render partial: 'partials/footer' %>
       </div>
-    </footer> 
-    
+    </footer>
+
   </body>
 </html>
