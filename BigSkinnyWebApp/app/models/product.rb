@@ -9,9 +9,9 @@ class Product < ApplicationRecord
   scope :cart,   -> {where(cart: true)}
   scope :need_reorder, -> {where('inventory < 20')}
   scope :alphabetical, -> {order(:name)}
-  scope :mens, -> {where("categories = 'Men' ")}
-  scope :womens, -> {where("categories = 'Women' ")}
-  scope :cases, -> {where("categories = 'Case' ")}
+  scope :mens, -> {where("category = 'Men' ")}
+  scope :womens, -> {where("category = 'Women' ")}
+  scope :cases, -> {where("category = 'Case' ")}
 
   #validations
   validates_presence_of :name, :weight, :description, :dimensions, :color, :category
