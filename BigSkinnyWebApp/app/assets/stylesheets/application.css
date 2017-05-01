@@ -16,10 +16,13 @@
  */
 
 nav {
-  margin-bottom: 0px !important;
   padding-bottom: 0px;
 }
 
+nav ul {
+  padding: none;
+  margin-bottom: -5px !important;
+}
 
 .social {
   max-width: 75px;
@@ -49,4 +52,3 @@ nav {
 #desc p{
   width: 100%;
 }
-
