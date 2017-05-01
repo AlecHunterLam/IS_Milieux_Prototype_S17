@@ -50,5 +50,16 @@
   <%= @product.picture %>
 </p>
 
+<%= form_for(@product) do |f| %>
+  <div class="field">
+    <%= f.label :cart %>
+    <%= f.text_field :cart %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>

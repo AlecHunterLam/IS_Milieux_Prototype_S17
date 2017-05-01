@@ -13,5 +13,9 @@ class HomeController < ApplicationController
 
   def information
   end
-  
+
+  def cart
+    @ordered_items = Product.all.cart
+  end
+
 end

@@ -1,0 +1,10 @@
+<h1>Cart</h1>
+
+
+<% if !(@ordered_items.nil?) %>
+  <% for item in @ordered_items %>
+    <p><%= item.name %></p>
+  <% end %>
+<% else %>
+  <p>No items in cart!</p>
+<% end %>

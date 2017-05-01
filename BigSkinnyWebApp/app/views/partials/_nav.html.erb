@@ -3,27 +3,31 @@
     <section class="top-bar-section">
       <ul class="left">
         <!-- link to home -->
-        <li><%= link_to "Home", 'index' %></li>
+        <li><%= link_to "Home", index_path %></li>
 
         <!-- options for items -->
         <li>
-        <%= link_to "Contact", 'contact'%>
+        <%= link_to "Contact", contact_path%>
         </li>
 
         <li>
-        <%= link_to "About", 'about'%>
+        <%= link_to "About", about_path%>
         </li>
 
         <li>
-        <%= link_to "Info", 'information'%>
+        <%= link_to "Info", information_path%>
         </li>
 
         <li>
-        <%= link_to "Data", 'data'%>
+        <%= link_to "Data", data_path%>
         </li>
 
         <li>
           <%= link_to "Products", products_path%>
+        </li>
+
+        <li>
+          <%= link_to "Cart", cart_path%>
         </li>
 
       </ul>

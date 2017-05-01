@@ -34,7 +34,7 @@
         <% if !(product.picture_url.nil?) %>
           <td><%= image_tag product.picture_url %></td>
         <%else%>
-          <td><%= image_tag product.picture_url %></td>
+          <td><%= product.picture_url %></td>
         <%end%>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
