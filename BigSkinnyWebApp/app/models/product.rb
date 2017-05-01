@@ -3,6 +3,8 @@ class Product < ApplicationRecord
   # List of allowable categories
   CATEGORIES = ['Men\'s', 'Women\'s', 'Kid\'s']
 
+ 
+  mount_uploader :picture, PictureUploader
   #scopes
   scope :cart,   -> {where(cart: true)}
   scope :need_reorder, -> {where('inventory < 20')}

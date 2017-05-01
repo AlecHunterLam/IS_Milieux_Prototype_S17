@@ -31,10 +31,10 @@
         <td><%= product.inventory %></td>
         <td><%= product.price %></td>
         <td><%= product.cart %></td>
-        <% if !(product.picture.nil?) %>
-          <td><%= image_tag product.picture %></td>
+        <% if !(product.picture_url.nil?) %>
+          <td><%= image_tag product.picture_url %></td>
         <%else%>
-          <td><%=  product.picture %></td>
+          <td><%= image_tag product.picture_url %></td>
         <%end%>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
