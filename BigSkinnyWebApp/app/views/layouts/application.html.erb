@@ -8,7 +8,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap.js"></script>
-    
+
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
     <script type="text/javascript">
@@ -21,11 +21,11 @@
                 categories: ['Men\'s', 'Women\s', 'Cases']
             },
             title: {
-                text: 'Wallet By Category'  
+                text: 'Wallet By Category'
             },
             series: [{
                 showInLegend: false,
-                data: [<%=Product.mens.all.size%>, <%=Product.womens.all.size%>,<%=Product.cases.all.size%>]        
+                data: [<%=Product.mens.all.size%>, <%=Product.womens.all.size%>,<%=Product.cases.all.size%>]
             }]
         });
     });
