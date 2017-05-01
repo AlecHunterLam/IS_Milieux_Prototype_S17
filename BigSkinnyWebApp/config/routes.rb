@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   get 'cart' => 'home#cart', as: :cart
 
+  get 'download_pdf' => 'home#download_pdf'
   resources :products
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

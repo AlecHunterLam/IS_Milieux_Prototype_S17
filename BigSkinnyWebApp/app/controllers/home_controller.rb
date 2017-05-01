@@ -18,4 +18,7 @@ class HomeController < ApplicationController
     @ordered_items = Product.all.cart
   end
 
+  def download_pdf
+    send_file 'app/assets/images/schedule.pdf'
+  end
 end
