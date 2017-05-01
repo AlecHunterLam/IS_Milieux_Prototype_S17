@@ -20,7 +20,22 @@ nav {
   padding-bottom: 0px;
 }
 
+
 .social {
   max-width: 75px;
   display: inline !important;
+
+#about_image img{
+  width: 100%;
+  min-width: 700px;
 }
+
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
