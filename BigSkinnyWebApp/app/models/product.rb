@@ -12,9 +12,9 @@ class Product < ApplicationRecord
   scope :kids, -> {where("categories = 'Kid\'s' ")}
 
   #validations
-  validates_presence_of :name, :weight, :description, :dimensions, :color, :category, :inventory, :price
+  validates_presence_of :name, :weight, :description, :dimensions, :color, :category
   validates_inclusion_of :category, in: CATEGORIES, message: "is not an option"
-  validates_numericality_of :inventory, only_integer: true, greater_than_or_equal_to: 0
-  validates_numericality_of :price, greater_than: 0
+  # validates_numericality_of :inventory, only_integer: true, greater_than_or_equal_to: 0
+  # validates_numericality_of :price, greater_than: 0
 
 end
