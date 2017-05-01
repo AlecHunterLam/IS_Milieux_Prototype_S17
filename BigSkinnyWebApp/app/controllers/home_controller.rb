@@ -9,6 +9,9 @@ class HomeController < ApplicationController
   end
 
   def data
+    @mens = Product.mens.all.size
+    @womens = Product.womens.all.size
+    @cases = Product.cases.all.size
   end
 
   def information

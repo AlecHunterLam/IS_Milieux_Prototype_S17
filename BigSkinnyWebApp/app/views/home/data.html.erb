@@ -1,1 +1,23 @@
 <h1>Data Page</h1>
+
+<script type="text/javascript">
+$(function () {
+    $('#category').highcharts({
+        chart: {
+            type: 'column'
+        },
+        xAxis: {
+            categories: ['Men\'s', 'Women\s', 'Cases']
+        },
+        title: {
+            text: 'Wallet By Category'  
+        },
+        series: [{
+            showInLegend: false,
+            data: [@mens, @womens, @cases]        
+        }]
+    });
+});
+</script>
+
+<div id="category"></div>
