@@ -19,3 +19,8 @@ nav {
   margin-bottom: 0px !important;
   padding-bottom: 0px;
 }
+
+.social {
+  max-width: 75px;
+  display: inline !important;
+}

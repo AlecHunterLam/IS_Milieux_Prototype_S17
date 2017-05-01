@@ -1,13 +1,21 @@
-<footer>
+<footer class="navbar navbar-default navbar-fixed-bottom">
 
+	<%= link_to(image_tag('big-skinny-black.png', class: "img-responsive center-block"), index_path) %>
+	<p class="text-center">
 	<%= link_to 'Home', index_path %>&nbsp;&nbsp;::&nbsp;&nbsp;
   <%= link_to 'About', about_path %>&nbsp;&nbsp;::&nbsp;&nbsp;
 	<%= link_to 'Contact', contact_path %>
-	<br /><br />
+	</p>
 
-	<div id="copy">
-		Webmaster: <%= mail_to("YOUR EMAIL", "QAPLA", encode: "javascript") %>
+	<div id="copy" class="text-center">
+		<%= link_to(image_tag('facebook.png', class: "img-responsive inline-block social"), "https://www.facebook.com/bigskinny/") %>
+		<%= link_to(image_tag('twitter.png', class: "img-responsive inlineblock social"), "https://twitter.com/big_skinny?lang=en") %>
+		<%= link_to(image_tag('instagram.png', class: "img-responsive inline-block social"), "https://www.instagram.com/bigskinnywallets/?hl=en") %>
+		<br/>
+		<br/>
+		Webmasters: <%= mail_to("subra@cmu.edu", "Alec and Ed", encode: "javascript") %>
 		&nbsp;&nbsp;&copy 2017
 	</div>
+	<br/>
 
 </footer>
