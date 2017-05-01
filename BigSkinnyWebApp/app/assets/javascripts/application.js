@@ -15,3 +15,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+function validate() {
+    var phoneTxt = $("#phoneTxt").val();
+    if (isNaN(phoneTxt) || phoneTxt.length != 10) {
+        alert("Phone is not valid. Phone must be strictly a 10 digit number");
+        return false;
+    }
+    return true
+}
