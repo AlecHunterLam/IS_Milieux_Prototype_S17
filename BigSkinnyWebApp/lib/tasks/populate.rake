@@ -20,10 +20,10 @@ namespace :db do
       weight: 104,
       dimensions: "5 x 4",
       color: "purple",
-      category: "Women's'",
+      category: "Women",
       cart: false,
       inventory: 140,
-      picture: 'app/assets/images/ttw.jpg',
+      picture: ''#'app/assets/images/ttw.jpg',
       price: 25.50)
     rbbw = FactorGirl.create(:product,
       name: 'RFID Blocking Bifold Wallet',
@@ -31,10 +31,10 @@ namespace :db do
       weight: 123,
       dimensions: "4.5 x 4",
       color: "black",
-      category: "Men's'",
+      category: "Men",
       cart: false,
       inventory: 200,
-      picture: 'app/assets/images/rbbw.jpg',
+      picture: ''#'app/assets/images/rbbw.jpg',
       price: 35.95)
     bpc = FactorGirl.create(:product,
       name: 'Black Metallic Power Card Ultra Thin Charger',
@@ -42,10 +42,10 @@ namespace :db do
       weight: 123,
       dimensions: "3.5 x 2.25",
       color: "black",
-      category: "Men's'",
+      category: "Men",
       cart: false,
       inventory: 200,
-      picture: 'app/assets/images/bpc.png',
+      picture: ''#'app/assets/images/bpc.png',
       price: 40.00)
 
   end

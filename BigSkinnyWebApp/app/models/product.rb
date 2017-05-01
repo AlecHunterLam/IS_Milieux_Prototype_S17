@@ -1,7 +1,7 @@
 class Product < ApplicationRecord
 
   # List of allowable categories
-  CATEGORIES = ['Men\'s', 'Women\'s', 'Kid\'s']
+  CATEGORIES = ['Men', 'Women', 'Case']
 
  
   mount_uploader :picture, PictureUploader
@@ -9,9 +9,9 @@ class Product < ApplicationRecord
   scope :cart,   -> {where(cart: true)}
   scope :need_reorder, -> {where('inventory < 20')}
   scope :alphabetical, -> {order(:name)}
-  scope :mens, -> {where("categories = 'Men\'s' ")}
-  scope :womens, -> {where("categories = 'Women\'s' ")}
-  scope :kids, -> {where("categories = 'Kid\'s' ")}
+  scope :mens, -> {where("category = 'Men' ")}
+  scope :womens, -> {where("category = 'Women' ")}
+  scope :cases, -> {where("category = 'Case' ")}
 
   #validations
   validates_presence_of :name, :weight, :description, :dimensions, :color, :category
