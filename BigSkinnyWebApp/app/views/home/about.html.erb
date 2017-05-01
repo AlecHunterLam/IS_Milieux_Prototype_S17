@@ -1,3 +1,4 @@
+<div id="about">
 <div class='row header text-center' id='about_image'>
   <div class='col-md-12'>
     <div class="thumbnail text-center">
@@ -10,7 +11,10 @@
 </div>
 
 <div class='row' id='about_desc'>
-  <div class="col-md-8" id=desc>
+<br><br><br><br>
+  <div class="col-sm-1 col-md-1"> &nbsp</div>
+  <div class="col-sm-7 col-md-7" id=desc>
+  <h2 class="text-center">From Fat To Skinny</h2>
   <p class="text-center">
   "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
   totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
@@ -18,20 +22,78 @@
   qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
   adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
   Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
-  consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-  vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+  consequatur?"
   </p>
   </div>
-  <div class="col-md-4">
+  <div class="col-sm-3 col-md-3">
   <%= image_tag 'thin.jpg', class: "img-responsive"%>
   </div>
+  <div class="col-sm-1 col-md-1">&nbsp</div>
+</div>
+<br><br><br><br>
 </div>
 
-<div class='row' id='review1'>
-  <div class="col-md-4">
+<div id="shows">
+  <div class='row' id='schedule'>
+  <div class="col-sm-1 col-md-1">&nbsp</div>
+  <div class="col-md-5">
+    <%= link_to(image_tag('schedule.png'), download_pdf_path)%>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-5">
+    <br><br><br>
+    <h2 class="text-center">Upcoming Shows</h2>
+    <br><br><br>
+    <table class="table borderless">
+      <thead>
+        <tr>
+          <th class='col-md-4'>Name</th>
+          <th class='col-md-1'>Start</th>
+          <th class='col-md-1'>End</th>
+          <th class='col-md-3'>Location</th>
+          <th class='col-md-3'>Venue</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MayFest</td>
+          <td>05/04</td>
+          <td>05/07</td>
+          <td>Ocean City, MD</td>
+          <td>Boardwalk</td>
+        </tr>
+        <tr>
+          <td>Port Neches River Fest</td>
+          <td>05/05</td>
+          <td>05/07</td>
+          <td>Port Neches, TX</td>
+          <td>Port Neches Riverfront</td>
+        </tr>
+        <tr>
+          <td>Mother Earth News Fair</td>
+          <td>05/06</td>
+          <td>05/07</td>
+          <td>Fletcher, NC</td>
+          <td>NC Fairgrounds</td>
+        </tr>
+        <tr>
+          <td>OUT RALEIGH</td>
+          <td>05/06</td>
+          <td>05/06</td>
+          <td>Rahleigh, NC</td>
+          <td>Fayetville Street</td>
+        </tr>
+        <tr>
+          <td>Sowa Open Market</td>
+          <td>05/06</td>
+          <td>10/29</td>
+          <td>Boston, MA</td>
+          <td>450 Harrison Ave</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+  <div class="col-sm-1 col-md-1">&nbsp</div>
+</div>
 </div>
 
 <div class='row' id='review2'>

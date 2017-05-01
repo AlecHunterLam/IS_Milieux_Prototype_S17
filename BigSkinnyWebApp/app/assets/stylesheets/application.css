@@ -45,10 +45,13 @@ nav ul {
     width: 100%;
 }
 
-#about_desc img{
-  padding: 5px;
+
+#schedule img{
+  margin: auto;
+  padding: 30px;
 }
 
-#desc p{
-  width: 100%;
+
+.table td{
+  text-align: left;
 }
