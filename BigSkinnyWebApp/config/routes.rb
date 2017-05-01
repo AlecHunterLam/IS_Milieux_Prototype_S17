@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  get 'home/home'
+  get 'index' => 'home#index', as: :index
 
-  get 'home/contact'
+  get 'contact' => 'home#contact', as: :contact
 
-  get 'home/about'
+  get 'about' => 'home#about', as: :about
 
-  get 'home/information'
+  get 'information' => 'home#information', as: :information
 
-  get 'home/data'
+  get 'data' => 'home#data', as: :data
 
   resources :products
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
