@@ -42,6 +42,9 @@ nav ul {
   min-width: 700px;
 }
 
+#schedule {
+  background-color: #ffffcc;
+}
 .thumbnail {
     position: relative;
 }
