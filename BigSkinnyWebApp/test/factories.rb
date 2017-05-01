@@ -8,7 +8,7 @@ FactoryGirl.define do
     category "Men"
     cart false
     inventory 100
-    picture '',#'app/assets/images/lhbw.jpg'
+    picture ''#'app/assets/images/lhbw.jpg'
     price 26.95
   end
 
