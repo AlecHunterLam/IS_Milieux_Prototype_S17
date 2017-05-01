@@ -19,3 +19,19 @@ nav {
   margin-bottom: 0px !important;
   padding-bottom: 0px;
 }
+
+#about_image img{
+  width: 100%;
+  min-width: 700px;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+}
