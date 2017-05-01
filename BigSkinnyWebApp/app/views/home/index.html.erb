@@ -1,23 +1,35 @@
-<h1>Home Page</h1>
-
 <div onload="showSlides(1);">
   <div id="slideshow">
-    <h1>Gallery</h1>
     <br>
     <div class="slideshow-container">
-      <div class="mySlides" style="display: block;">
+      <div class="mySlides  thumbnail text-center" style="display: block;">
         <div class="numbertext">1 / 3</div>
-        <%= image_tag 'contact.jpg', class: "img-responsive"%>
+        <%= image_tag 'slide_1.jpg', class: "img-responsive"%>
+        <div class="caption-home">
+          <h3 class="text-center">Welcome to</h3>
+          <%= image_tag 'big-skinny.png'%>
+          <h3>The Big Skinny</h3>
+        </div>
       </div>
 
-      <div class="mySlides">
+      <div class="mySlides thumbnail text-center">
         <div class="numbertext">2 / 3</div>
-        <%= image_tag 'contact.jpg', class: "img-responsive"%>
+        <%= image_tag 'slide_2.jpg', class: "img-responsive"%>
+        <div class="caption-home">
+          <h3 class="text-center">Welcome to</h3>
+          <%= image_tag 'big-skinny.png'%>
+          <h3>The Big Skinny</h3>
+        </div>
       </div>
 
-      <div class="mySlides">
+      <div class="mySlides  thumbnail text-center">
         <div class="numbertext">3 / 3</div>
-        <%= image_tag 'contact.jpg', class: "img-responsive"%>
+        <%= image_tag 'slide_3.jpg', class: "img-responsive"%>
+        <div class="caption-home">
+          <h3 class="text-center">Welcome to</h3>
+          <%= image_tag 'big-skinny.png'%>
+          <h3>The Big Skinny</h3>
+        </div>
       </div>
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -26,9 +38,9 @@
     <br>
 
     <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
     </div>
 </div>
