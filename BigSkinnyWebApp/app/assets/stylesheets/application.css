@@ -20,6 +20,11 @@ nav {
   padding-bottom: 0px;
 }
 
+
+.social {
+  max-width: 75px;
+  display: inline !important;
+
 #about_image img{
   width: 100%;
   min-width: 700px;
@@ -43,3 +48,4 @@ nav {
 #desc {
   padding: 10px;
 }
+
