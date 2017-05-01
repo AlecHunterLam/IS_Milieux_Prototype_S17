@@ -35,3 +35,11 @@ nav {
     left: 0;
     width: 100%;
 }
+
+#about_desc img{
+  padding: 5px;
+}
+
+#desc {
+  padding: 10px;
+}
