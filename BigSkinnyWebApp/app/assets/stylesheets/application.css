@@ -46,7 +46,7 @@ nav {
   padding: 5px;
 }
 
-#desc {
-  padding: 10px;
+#desc p{
+  width: 100%;
 }
 
