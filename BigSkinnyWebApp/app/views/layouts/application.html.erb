@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BigSkinnyWebApp</title>
+    <title>Big Skinny</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,20 +10,15 @@
     <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="https://lib.store.yahoo.net/lib/yhst-94975210642937/kman.ico" />
 
-    
+
   </head>
 
 
   <body>
     <%= render :partial => "partials/nav" %>
-    <% flash.each do |name, msg| %>
-          <div class="light-wrapper">
-            <div class="flash text-center">
-                <h3><%= content_tag :div, msg, id: "flash_#{name}" %></h3
-            </div>
-          </div>
-          <% end %>
+
     <%= yield %>
 
     <footer>
