@@ -35,6 +35,13 @@
 
   <body>
     <%= render :partial => "partials/nav" %>
+    <% flash.each do |name, msg| %>
+          <div class="light-wrapper">
+            <div class="flash text-center">
+                <h3><%= content_tag :div, msg, id: "flash_#{name}" %></h3
+            </div>
+          </div>
+          <% end %>
     <%= yield %>
 
     <footer>

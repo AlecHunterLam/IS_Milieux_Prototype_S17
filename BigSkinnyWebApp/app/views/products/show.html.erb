@@ -47,17 +47,22 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @product.picture %>
+
 </p>
+<% if @product.picture_url.nil? || @product.picture_url.include?("missing") %>
+  <%= image_tag "missing.png" %>
+<% else %>
+  <%= image_tag @product.picture_url %>
+<% end %>
 
 <%= form_for(@product) do |f| %>
   <div class="field">
-    <%= f.label :cart %>
-    <%= f.text_field :cart %>
+    <%= f.label "Add to Cart?" %>
+    <%= f.check_box :cart %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Submit"%>
   </div>
 <% end %>
 
