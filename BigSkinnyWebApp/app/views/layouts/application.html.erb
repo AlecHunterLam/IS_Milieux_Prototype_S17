@@ -11,25 +11,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
-    <script type="text/javascript">
-    $(function () {
-        $('#category').highcharts({
-            chart: {
-                type: 'column'
-            },
-            xAxis: {
-                categories: ['Men\'s', 'Women\s', 'Cases']
-            },
-            title: {
-                text: 'Wallet By Category'
-            },
-            series: [{
-                showInLegend: false,
-                data: [<%=Product.mens.all.size%>, <%=Product.womens.all.size%>,<%=Product.cases.all.size%>]
-            }]
-        });
-    });
-  </script>
+    
   </head>
 
 
