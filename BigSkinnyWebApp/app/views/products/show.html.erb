@@ -1,17 +1,18 @@
-<p id="notice"><%= notice %></p>
-<br/>
+
+
+<h3 id="notice" class="text-center"><%= notice %></h3>
 <div class=row>
   <div class="col-md-2">&nbsp</div>
   <div class=col-md-5>
     <h1><%= @product.name %></h1>
-    <h2>Price: <%= @product.price %></h2>
+    <h2>Price: <%= number_to_currency(@product.price) %></h2>
   <div id="showdesc">
     <strong>Description:</strong>
     <%= @product.description %>
   </div>
   <p>
     <strong>Weight:</strong>
-    <%= @product.weight %>
+    <%= @product.weight %> grams
   </p>
   <p>
     <strong>Dimensions:</strong>
@@ -26,18 +27,16 @@
     <%= @product.category %>
   </p>
   <p>
-    <strong>Inventory:</strong>
-    <%= @product.inventory %>
+    <strong>Stock:</strong>
+    <%= @product.inventory %> units
   </p>
-  <p>
-    <strong>Cart:</strong>
-    <%= @product.cart %>
-  </p>
+
 
   <%= form_for(@product) do |f| %>
     <div class="field">
-      <%= f.label "Add to Cart?" %>
-      <%= f.check_box :cart %>
+
+      <h3><%= f.label "Add to Cart?" %>
+      <%= f.check_box :cart %></h3>
     </div>
   <br>
     <div class="actions">
@@ -45,8 +44,12 @@
     </div>
   <% end %>
   <br>
-  <%= link_to 'Edit', edit_product_path(@product) %> |
-  <%= link_to 'Back', products_path %>
+  <div class=" text-center">
+    <button class="btn btn-sm"><%= link_to 'Back to Products', products_path %></button>
+    <br/>
+    <br/>
+  </div>
+
   </div>
 
   <div class=col-md-3 id="showpic">
@@ -59,4 +62,3 @@
   </div>
   <div class="col-md-2">&nbsp</div>
 </div>
-

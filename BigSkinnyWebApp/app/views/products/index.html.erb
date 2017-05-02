@@ -4,17 +4,65 @@
 
 
 
-
-
+<br/>
+<h1 class="text-center">Products</h1>
   <div class="col-md-2">
-    <h3>Product Options</h3>
+    <h3>Promotions</h3>
     <div class="product-sidebar">
+      <div class="row">
+        <iframe src="https://www.youtube.com/embed/lLlH78Ofkrk" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="row">
+        <%= image_tag "ad_1.jpg" %>
+      </div>
+      <br/>
+      <div class="row">
+        <%= image_tag "ad_6.jpg" %>
+      </div>
+      <br/>
+      <div class="row">
+        <%= image_tag "ad_8.jpg" %>
+      </div>
+      <br/>
+      <div class="row">
+        <%= image_tag "ad_2.jpg" %>
+      </div>
+      <br/>
+      <div class="row">
+        <%= image_tag "ad_3.jpg" %>
+      </div>
+      <br/>
+      <div class="row">
+        <%= image_tag "ad_7.jpg" %>
+      </div>
+      <br/>
+      <div class="row">
+        <%= image_tag "ad_5.jpg" %>
+      </div>
+      <br/>
+      <div class="row">
+        <%= image_tag "ad_4.jpg" %>
+      </div>
+      <br/>
+      <div class="row">
+        <%= image_tag "ad_9.jpg" %>
+      </div>
+      <br/>
+      <div class="row">
+        <%= image_tag "ad_10.jpg" %>
+      </div>
+      <br/>
+      <div class="row">
+        <%= image_tag "ad_11.jpg" %>
+      </div>
+
     </div>
   </div>
 
   <div class="col-md-10">
     <table class="table table-hover">
-        <h1 class="text-center">Products</h1>
+
       <thead>
         <tr>
           <th><p>Name</p></th>
@@ -38,9 +86,9 @@
             <% else %>
               <td><%= image_tag product.picture_url %></td>
             <% end %>
-            <td><p class="text-center"><%= product.weight %></p></td>
+            <td><p class="text-center"><%= product.weight %> grams</p></td>
             <td><p class="text-center"><%= product.category %></p></td>
-            <td><p class="text-center"><%= product.price %></p></td>
+            <td><p class="text-center"><%= number_to_currency(product.price) %></p></td>
 
             <td ><p class="text-center"><%= link_to 'View Product Details', product %></p></td>
             <td><p class="text-center"><%= link_to 'Edit Product', edit_product_path(product) %></p></td>
@@ -52,6 +100,11 @@
   <br>
   
 
-  <%= link_to 'New Product', new_product_path %>
+  <div class=" text-center">
+    <button class="btn btn-lg"><%= link_to 'Add New Product', new_product_path %></button>
+    <br/>
+    <br/>
+  </div>
+
 </div>
 </div>

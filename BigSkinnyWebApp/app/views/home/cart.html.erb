@@ -1,10 +1,9 @@
 <div class="product-container">
 
 
-
-
-<p id="notice"><%= notice %></p>
-<br/><br/>
+<br/>
+<h1 id="notice" class="text-center"><%= notice %></h1>
+<br/>
 <h1 class="text-center">Cart</h1>
 
 <% if !(@ordered_items.empty?) %>
@@ -22,7 +21,9 @@
         <th>Price</th>
 
 
+
         <th colspan="1"></th>
+        <th>Quantity</th>
       </tr>
     </thead>
 
@@ -40,15 +41,25 @@
           <td><%= product.dimensions %></td>
           <td><%= product.color %></td>
           <td><%= product.category %></td>
-          <td><%= product.price %></td>
+          <td><%= number_to_currency(product.price) %></td>
 
           <td><%= link_to 'View Product Details', product %></td>
+          <td><input placeholder="2"></input></td>
         </tr>
       <% end %>
     </tbody>
   </table>
 
 <br>
+
+<form>
+
+  <div class=" text-center">
+    <submit class="btn-success btn-lg"><%= link_to 'Checkout', cart_path, method: :checkout %></submit>
+  </div>
+  <br/>
+</form>
+
 
 <%else%>
   <h1 class="text-center ">No items in cart!</h1>

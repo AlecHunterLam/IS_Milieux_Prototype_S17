@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'index' => 'home#index', as: :index
+  get '' => 'home#index', as: :index
 
   get 'contact' => 'home#contact', as: :contact
 
@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'data' => 'home#data', as: :data
 
   get 'cart' => 'home#cart', as: :cart
+  post 'cart' => 'home#checkout', as: :checkout
 
   get 'download_pdf' => 'home#download_pdf'
   resources :products
