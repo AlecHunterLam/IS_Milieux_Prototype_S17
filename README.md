@@ -1,4 +1,4 @@
-#   IS_Milieux_Prototype_S17
+#   IS Milieux Prototype S17
 Web Application Prototype for The Big Skinny - Information Systems Milieux Term Project - Spring 2017
 
 This is the Term Project for Information Systems Milieux (67-250) at Carnegie Mellon University. The project is a Ruby on Rails application that models an e-commerce wallet store, Big Skinny, using HTML, CSS, JavaScript, Ruby, SQLite, and Bootstrap.
