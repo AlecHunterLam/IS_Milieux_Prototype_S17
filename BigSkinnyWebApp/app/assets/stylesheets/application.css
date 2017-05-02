@@ -263,3 +263,12 @@ footer {
 .option .caption {
   left:35%;
 }
+
+table {
+  width: 90% !important;
+  margin: auto;
+}
+
+td img {
+  width: 200px;
+}
