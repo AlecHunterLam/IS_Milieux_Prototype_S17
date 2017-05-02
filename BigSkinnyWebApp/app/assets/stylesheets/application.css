@@ -303,3 +303,27 @@ td img {
   width: 50%;
   margin: auto;
 }
+.product-sidebar {
+  border: 2px black solid;
+}
+
+th {
+  font-size: 150%;
+}
+
+table {
+  box-shadow: 1px 1px 1px 1px gray;
+  background-color: white;
+}
+
+.product-container {
+  background-image: url("/products-background.jpg") ;
+  background-size: 100%;
+}
+.product-container h1 {
+  color:white;
+}
+
+.product-container h3 {
+  color:white;
+}
