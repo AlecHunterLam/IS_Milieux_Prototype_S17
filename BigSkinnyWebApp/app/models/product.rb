@@ -12,7 +12,11 @@ class Product < ApplicationRecord
   scope :mens, -> {where("category = 'Men' ")}
   scope :womens, -> {where("category = 'Women' ")}
   scope :cases, -> {where("category = 'Case' ")}
+
   scope :category, ->{(order(:category))}
+
+
+  scope :for_price, ->(price){where("price >= ? AND price < ?", price-10, price)}
 
   #validations
   validates_presence_of :name, :weight, :description, :dimensions, :color, :category

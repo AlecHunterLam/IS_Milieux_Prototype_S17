@@ -47,12 +47,42 @@ namespace :db do
       description: "Hours of extra use for your phone. Universal Works with iPhones, mobile phones, iPods, speakers and more via USB cable. Charge level varies per device. Card Size The lightest and thinnest (5mm) in the world Fits perfectly in your Big Skinny wallet!",
       weight: 123,
       dimensions: "3.5 x 2.25",
-      color: "black",
+      color: "Case",
       category: "Men",
       cart: false,
       inventory: 200,
-      picture: File.new('app/assets/images/bpc.png'),
+      picture: File.open('app/assets/images/bpc.png'),
       price: 40.00)
-
+    rblwbz = Product.create(name: 'RFID Blocking Leather World Bifold With Zipper',
+      description: "World traveler, this is the wallet for you! Our most popular international wallet is now lined with RFID blocking technology to keep your information safe. This model accommodates international currency and features a handy exterior coin pocket. Crafted from durable, top-grain cowhide leather on the exterior and ultra-thin, lightweight nylon microfiber on the interior [the best of both Worlds]. Our extra wide card pockets make it convenient to store a few cards in each slot and make it easy to grab what you need. The card pockets and billfold are all lined with a non-slip interior to help prevent your goods from succumbing to gravity when you're scaling a building. This is most certainly the wallet James Bond would choose.",
+      weight: 141,
+      dimensions: "4.25 x 4",
+      color: "black",
+      category: "Men",
+      cart: false,
+      inventory: 10,
+      picture: File.open('app/assets/images/rblwbz.jpg'),
+      price: 53.95)
+    rbnpmsw = Product.create(name: 'RFID Blocking Nylon Plus-sized Myphone Wallet',
+      description: "Who says bigger isn't better? Certainly not the cell phone designers. Our plus-sized MyPhone wallet, now also available with RFID protection [which helps keep your data safe!] offers all the same features as our regular Myphone wallet, but with extra room for your super sized smartphones and cases. Big enough to fit Galaxy S3, Galaxy Note, Iphone 5 and most Otterbox cases.",
+      weight: 141,
+      dimensions: "6 x 4",
+      color: "blue",
+      category: "Women",
+      cart: false,
+      inventory: 15,
+      picture: File.open('app/assets/images/rbnpmw.jpg'),
+      price: 47.95)
+    pcutc = Product.create(name: 'Patterned Power Card Ultra Thin Charger',
+      description: "Universal Works with iPhones, mobile phones, iPods, speakers and more via USB cable. Charge level varies per device. Card Size The lightest and thinnest (5mm) in the world Fits perfectly in your Big Skinny wallet! LED button Indicates power level",
+      weight: 101,
+      dimensions: "3.5 x 2.25",
+      color: "Colorful",
+      category: "Case",
+      cart: false,
+      inventory: 12,
+      picture: File.open('app/assets/images/pcutc.png'),
+      price: 35.00)
+    
   end
 end

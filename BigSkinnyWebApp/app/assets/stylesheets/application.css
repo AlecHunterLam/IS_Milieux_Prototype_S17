@@ -272,6 +272,7 @@ table {
 td img {
   width: 200px;
 }
+
 .form-group input {
   margin: auto;
 }
@@ -286,4 +287,19 @@ td img {
 
 .white input {
   color:white;
+}
+
+
+#category {
+  width: 75%;
+  margin: auto;
+}
+
+#pricerange {
+  width: 75%;
+  margin: auto;
+}
+#needreorder {
+  width: 50%;
+  margin: auto;
 }
