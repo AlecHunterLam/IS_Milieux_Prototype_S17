@@ -3,6 +3,31 @@
 
 
 <div id="category"></div>
+<div id="pricerange"></div>
+<div id="needreorder">
+    <%if Product.need_reorder.first.nil?%>
+    <center><h3>No Items On The Reorder List</h3></center>
+    <%else%>
+    <center><h3>Reorder List</h3></center>
+    <table class="datagrid" align="center">
+        <thead class="datagrid">
+        <tr>
+            <th>Product</th>
+            <th>Inventory</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <% for product in Product.need_reorder.all %>
+            <tr>
+            <td><%= link_to product.name, product_path(product)%></td>
+            <td><%= product.inventory %></td>
+            </tr>
+        <% end %>
+        </tbody>
+    </table>
+    <%end%>
+</div>
 
 <script type="text/javascript">
     $(function () {
@@ -19,6 +44,26 @@
             series: [{
                 showInLegend: false,
                 data: [<%=Product.mens.all.size%>, <%=Product.womens.all.size%>,<%=Product.cases.all.size%>]
+            }]
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        $('#pricerange').highcharts({
+            chart: {
+                type: 'column'
+            },
+            xAxis: {
+                categories: ['$0-$10', '$10-$20', '$20-$30','$30-$40','$40-$50']
+            },
+            title: {
+                text: 'Wallets By Price'
+            },
+            series: [{
+                showInLegend: false,
+                data: [<%=Product.for_price(10).size%>, <%=Product.for_price(20).size%>,<%=Product.for_price(30).size%>,<%=Product.for_price(40).size%>,<%=Product.for_price(50).size%>]
             }]
         });
     });

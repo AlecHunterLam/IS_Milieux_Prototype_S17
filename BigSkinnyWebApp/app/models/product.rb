@@ -12,7 +12,7 @@ class Product < ApplicationRecord
   scope :mens, -> {where("category = 'Men' ")}
   scope :womens, -> {where("category = 'Women' ")}
   scope :cases, -> {where("category = 'Case' ")}
-
+  scope :for_price, ->(price){where("price >= ? AND price < ?", price-10, price)}
   #validations
   validates_presence_of :name, :weight, :description, :dimensions, :color, :category
   validates_inclusion_of :category, in: CATEGORIES, message: "is not an option"
