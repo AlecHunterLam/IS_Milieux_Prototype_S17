@@ -83,6 +83,45 @@ namespace :db do
       inventory: 12,
       picture: File.open('app/assets/images/pcutc.png'),
       price: 35.00)
-    
+    rccs = Product.create(name: 'RFID Credit Card Sleeve',
+      description: "Credit cards that contain small RFID chips can be scanned by thieves to steal your data. Help protect your plastic with our RFID credit card sleeves. It's a cheap way to ward off credit card data theft. Of course, to be 100 percent staff from thieves scanning RFID data or stealing your cards outright, leave them locked up at home. But when you must bring your cards with you, RFID card sleeves add extra security.",
+      weight: 20,
+      dimensions: "4 x 2.25",
+      color: "Striped",
+      category: "Case",
+      cart: false,
+      inventory: 50,
+      picture: File.open('app/assets/images/rccs.jpg'),
+      price: 3.99)
+    rps = Product.create(name: 'RFID Passport Sleeve',
+      description: "Protect your passport with our RFID passport sleeve from Big Skinny. Thieves can scan the RFID chip on your passport and steal your information. Our passport sleeve will help prevent that, and it's designed to accommodate today's thicker passports. Add it to your purchase of our super-secure passport holder/traveler wallet.",
+      weight: 25,
+      dimensions: "6 x 3.75",
+      color: "Striped",
+      category: "Case",
+      cart: false,
+      inventory: 5,
+      picture: File.open('app/assets/images/rps.jpg'),
+      price: 4.99)
+    msw = Product.create(name: 'Mini Stretch Wallet',
+      description: "Our Mini Stretch card holder from Big Skinny is winning rave reviews for its superior quality and super-thin construction. Scroll down to read love letters from our customers for this awesome stretchy wallet. It's made of incredibly thin elastic that wraps around your cards to keep them from slipping out. Stash up to 10 plastic cards and a little folding money into a pocket wallet that measures only 3 ½ inches by 2 3/16 inches.",
+      weight: 25,
+      dimensions: "3.5 x 2.5",
+      color: "Brown",
+      category: "Case",
+      cart: false,
+      inventory: 60,
+      picture: File.open('app/assets/images/msw.jpg'),
+      price: 8.50)
+    tch = Product.create(name: 'Thin Card Holder',
+      description: "Fill it with 25 full-size plastic cards and cash if you want and it will still fit in your jogging suit or your tiny cell phone pocket in your new Brooks Brothers winter coat. Three pockets: Extra-wide front ID pocket for flashing folks at all those annoying airport checkpoints, an extra-wide pocket on the inside for frequently used cards and a catch-all accordion pocket for all those cards you rarely use but must carry. After stuffing your cards in, there's still room for your folded cash and receipts as well as an extra interior pocket for extra special items. Thinner and lighter than any leather you'll ever find. Holds 25+ full-size plastic cards and pockets are wide enough for business cards.",
+      weight: 60,
+      dimensions: "4 x 2.75",
+      color: "Red",
+      category: "Case",
+      cart: false,
+      inventory: 60,
+      picture: File.open('app/assets/images/tch.jpg'),
+      price: 12.50)
   end
 end
