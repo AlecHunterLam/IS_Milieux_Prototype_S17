@@ -90,7 +90,7 @@
             <td><p class="text-center"><%= product.category %></p></td>
             <td><p class="text-center"><%= number_to_currency(product.price) %></p></td>
 
-            <td ><p class="text-center"><%= link_to 'View Product Details', product %></p></td>
+            <td ><p class="text-center"><%= link_to 'View Product Details or Add to Cart', product %></p></td>
             <td><p class="text-center"><%= link_to 'Edit Product', edit_product_path(product) %></p></td>
           </tr>
         <% end %>
@@ -98,7 +98,7 @@
     </table>
   </div>
   <br>
-  
+
 
   <div class=" text-center">
     <button class="btn btn-lg"><%= link_to 'Add New Product', new_product_path %></button>
