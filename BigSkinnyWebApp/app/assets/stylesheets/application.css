@@ -272,3 +272,17 @@ table {
 td img {
   width: 200px;
 }
+
+#category {
+  width: 75%;
+  margin: auto;
+}
+
+#pricerange {
+  width: 75%;
+  margin: auto;
+}
+#needreorder {
+  width: 50%;
+  margin: auto;
+}
