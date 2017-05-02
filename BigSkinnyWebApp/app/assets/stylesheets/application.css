@@ -303,6 +303,7 @@ td img {
   width: 50%;
   margin: auto;
 }
+
 .product-sidebar {
   border: 2px black solid;
 }
@@ -326,4 +327,9 @@ table {
 
 .product-container h3 {
   color:white;
+}
+#showpic img{
+  width: 600px;
+  margin: auto;
+  float: right;
 }
