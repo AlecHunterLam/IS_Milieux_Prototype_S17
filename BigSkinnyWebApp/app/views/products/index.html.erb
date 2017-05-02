@@ -31,11 +31,11 @@
         <td><%= product.inventory %></td>
         <td><%= product.price %></td>
         <td><%= product.cart %></td>
-        <% if !(product.picture_url.nil?) %>
+        <% if product.picture_url.nil? || product.picture_url.include?("missing") %>
+          <td><%= image_tag "missing.png" %></td>
+        <% else %>
           <td><%= image_tag product.picture_url %></td>
-        <%else%>
-          <td><%= product.picture_url %></td>
-        <%end%>
+        <% end %>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
