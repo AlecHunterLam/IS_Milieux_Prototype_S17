@@ -123,5 +123,26 @@ namespace :db do
       inventory: 60,
       picture: File.open('app/assets/images/tch.jpg'),
       price: 12.50)
+    rbns = Product.create(name: 'RFID Blocking Nylon Slimvelope',
+      description: "Our sleek clutch-like billfold wallet is a modified version of the classic women's long wallet - but more clever of course! Our best-selling Slimvelope is now also available with RFID blocking material to help prevent data thieves from getting your information. There are 3 long sections for cash, receipts, etc. Pockets and billfold are lined with a non-slip interior to prevent your goods from succumbing to gravity. Our clever divide-and-conquor design strategy keeps your items organized in a flat plane, instead of stacked on top of each other. Stays flat no matter what you add to it, even when the large coin section on the reverse is full! Neat little magnetic snap closure is strong enough to keep your wallet closed even when it's jostled around in your bag. Crafted from machine-washable nylon microfiber.",
+      weight: 230,
+      dimensions: "7.5 x 4",
+      color: "Graphite Cobble",
+      category: "Women",
+      cart: false,
+      inventory: 60,
+      picture: File.open('app/assets/images/rbns.jpg'),
+      price: 47.95)
+    lpc = Product.create(name: 'Leather Panther Clutch',
+      description: "Our Panther leather clutch is smart and stunning, which is why we're collecting so many 'love it' letters from fans. This popular addition to our line of ultra-slim women's clutches and wallets at Big Skinny is a combination clutch and wallet. The exterior is premium super soft leather, and the interior is our famed lightweight nylon material with no-slip grip coatings inside each purse pocket.",
+      weight: 420,
+      dimensions: "7.5 x 4.5",
+      color: "Chocolate Brown",
+      category: "Women",
+      cart: false,
+      inventory: 60,
+      picture: File.open('app/assets/images/lpc.jpg'),
+      price: 36.00)
+    
   end
 end
