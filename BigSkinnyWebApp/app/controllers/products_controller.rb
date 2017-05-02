@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    @products = Product.all.category
   end
 
   # GET /products/1
@@ -42,8 +42,13 @@ class ProductsController < ApplicationController
   def update
     respond_to do |format|
       if @product.update(product_params)
-        format.html { redirect_to @product, notice: 'Product was successfully added to cart.' }
-        format.json { render :show, status: :ok, location: @product }
+        if @product.cart?
+          format.html { redirect_to @product, notice: 'Product was successfully added to cart.' }
+          format.json { render :show, status: :ok, location: @product }
+        else
+          format.html { redirect_to @product, notice: 'Product was successfully updated.' }
+          format.json { render :show, status: :ok, location: @product }
+        end
       else
         format.html { render :edit }
         format.json { render json: @product.errors, status: :unprocessable_entity }

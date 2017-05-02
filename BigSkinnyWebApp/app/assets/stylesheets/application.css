@@ -273,6 +273,23 @@ td img {
   width: 200px;
 }
 
+.form-group input {
+  margin: auto;
+}
+
+.product-form {
+
+  background-image: url(https://static.kickstarter.com/assets/stories/wallets/fb-image-766fffd8fc81ef42f8b2e84f9966d01a67f6dfe80f67f28cce3f906308ca08e4.jpg);
+}
+.white label {
+  color:white;
+}
+
+.white input {
+  color:white;
+}
+
+
 #category {
   width: 75%;
   margin: auto;
